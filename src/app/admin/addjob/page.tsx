@@ -5,13 +5,14 @@ import { Textarea } from "@nextui-org/react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 import { log } from 'console';
 import { addJob } from '@/actions/addjob';
+import { useToast } from '@/components/ui/use-toast';
 // import { Dropdown, Checkbox } from "@nextui-org/react";
 // import {Select, SelectSection, SelectItem} from "@nextui-org/react";
 
 const branches = ["CSE", "IT", "ECE", "EEE", "Mechanical", "Civil"];
 type Selection = string[];
 const JobForm: React.FC = () => {
-
+    const { toast } = useToast()
     const [selectedKeys, setSelectedKeys] = React.useState(new Set(["CSE"]));
 
     const selectedValue = React.useMemo(
@@ -44,11 +45,12 @@ const JobForm: React.FC = () => {
         ctc: '',
         passedOutBatch: '',
         lastDateToApply: '',
+        applyLink: '',
+        driveMode: '',
         jobDescription: ''
     });
 
     const addJobWithBranches = addJob.bind(null, selectedKeys)
-
 
 
     // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -62,6 +64,8 @@ const JobForm: React.FC = () => {
     //     console.log(formData);
 
     // }
+
+
     return (
         <div className="p-4 w-[80%] mx-auto">
             <form action={addJobWithBranches}>
@@ -226,6 +230,31 @@ const JobForm: React.FC = () => {
                         </label>
                         <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-[#C4C4C4] text-lg' variant={'bordered'} type="date" label="  " placeholder='0' size='lg' name='lastDatetoApply' />
                     </div>
+
+                    {/* Link */}
+                    <div>
+                        <label
+                            htmlFor="driveDate"
+                            className="block text-gray-700 font-normal mb-2"
+                        >
+                            Apply Link
+                        </label>
+                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-[#C4C4C4] text-lg' variant={'bordered'} type="Link" label="  " placeholder='Enter Link' size='lg' name='applyLink' />
+                    </div>
+
+                    {/* Drive Mode */}
+                    <div>
+                        <label
+                            htmlFor="driveDate"
+                            className="block text-gray-700 font-normal mb-2"
+                        >
+                            Drive Mode
+                        </label>
+                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-[#C4C4C4] text-lg' variant={'bordered'} type="text" label="  " placeholder='Enter Link' size='lg' name='driveMode' />
+                    </div>
+
+
+
                     {/* Job Description */}
                     <div className="md:col-span-2">
                         <label

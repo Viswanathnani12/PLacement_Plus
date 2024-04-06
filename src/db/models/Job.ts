@@ -49,6 +49,14 @@ const JobSchema = new mongoose.Schema({
     type: String,
     required: [true, "Enter Last Date to Apply"],
   },
+  applyLink: {
+    type: String,
+    required: [true, "Enter Apply Link"],
+  },
+  driveMode: {
+    type: String,
+    required: [true, "Enter Drive Mode"],
+  },
   jobDescription: {
     type: String,
     required: [true, "Enter Job Description"],
