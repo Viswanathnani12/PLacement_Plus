@@ -23,6 +23,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import FileInput from "@/components/FileInput";
 
 
 // import  Sidebar  from "@/components/Sidebar";
@@ -128,7 +129,7 @@ export default async function Page() {
                                             month: "2-digit",
                                             year: "numeric",
                                         })}</p> </p>
-                                    <Button className="w-full h-8  font-light" variant="destructive">Add Result</Button>
+                                    <FileInput/>
                                 </Card>
                             </CarouselItem>
                         ))}
