@@ -32,7 +32,19 @@ export default async function Page() {
 
 
     // const [file,setFile] = useState()
-
+    const filterJobsByWeek = (): any => {
+        const currentDate = new Date();
+        const currentWeekStart = currentDate.getDate() - currentDate.getDay();
+        const currentWeekEnd = currentWeekStart + 6;
+        // console.log(currentWeekStart);
+        // console.log(currentWeekEnd);
+    
+        return jobs.filter(job => {
+          const driveDate = new Date(job.driveDate).getDate();
+          // console.log(driveDate);
+          return driveDate >= currentWeekStart && driveDate <= currentWeekEnd;
+        });
+      };
 
 
     const jobs = await newJob.find({})
@@ -48,6 +60,7 @@ export default async function Page() {
     };
 
     const completedJobs = filterCompletedJobs();
+    const jobsByWeek = filterJobsByWeek();
 
 
 
@@ -65,7 +78,7 @@ export default async function Page() {
             >
                 <div className="w-full flex mt-4">
                     <CarouselContent>
-                        {completedJobs.map((job: any) => (
+                        {jobsByWeek.map((job: any) => (
                             <CarouselItem key={job.companyName} className="md:basis-1/2 lg:basis-1/3">
                                 <Drawer key={job.companyName} >
                                     <DrawerTrigger asChild>

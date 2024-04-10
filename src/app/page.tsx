@@ -26,7 +26,7 @@ export default function Home() {
     // </div>
     <div className="absolute h-full mt-[-15px] mr-[-30px] w-screen">
       <div className="h-full m-[-20px] bg-no-repeat" style={{ backgroundImage: "url('./Vector.png')" }}>
-        <div className="relative flex justify-evenly h-14 border border-[#E2E8F0] m-4 top-20 p-2 ml-96 shadow-md
+        <div className="relative flex justify-evenly h-14 border border-[#E2E8F0] m-4 top-20 p-2 ml-72 shadow-md
           shadow-[#bde9f7af] rounded-md bg-[#FFFFFF] w-fit" >
           <div className="text-center p-3 mr-64 ">
             <p className="text-md font-normal ">Placementplus</p>
@@ -46,13 +46,13 @@ export default function Home() {
         </div>
       </div>
       <div className="relative flex ml-40  top-[-380px] w-full mt-[-100px] h-80">
-        <div className="w-[60%] h-full">
+        <div className="w-[60%] h-full ml-[-20px]">
           <p className={cn("text-6xl mb-4", myfont.className)}>Take your job profile to the <p className="text-[#103FEF]">Placementplus</p></p>
           <p className="text-lg font-light text-[#505B66]">Boost your job profile with Kudos from your peers for your skills<br />
             and traits. Land your dream job effortlessly. Our platform helps <br /> you keep track of all your jobs.
           </p>
         </div>
-        <div className="relative w-[50%] h-full top-[-70px] ml-[-200px]">
+        <div className="relative w-[50%] h-full top-[-70px] ml-[-150px] mt-[20px]">
           <Image src={'/wel.gif'} alt="" width={0} height={0} className="h-[430px] w-[430px] "></Image>
         </div>
       </div>

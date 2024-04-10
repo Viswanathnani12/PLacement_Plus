@@ -5,6 +5,7 @@ import { FiHome, FiPlusCircle, FiCalendar, FiBarChart2, FiHelpCircle, } from 're
 import { CalendarDays, ClipboardList, HomeIcon, Layers, Menu, MessageCircleIcon, MessageCircleQuestion } from 'lucide-react';
 import { UserButton } from '@clerk/nextjs';
 import { Button } from '../ui/button'
+import { useRouter } from 'next/navigation';
 
 interface Option {
     id: string;
@@ -14,13 +15,13 @@ interface Option {
 }
 
 const Sidebar = () => {
-
+    
 
     const options: Option[] = [
         { id: '1', label: 'Dashboard', href: '/admin/dashboard', icon: <HomeIcon strokeWidth={1} /> },
         { id: '2', label: 'Add Job', href: '/admin/addjob', icon: <ClipboardList strokeWidth={1} /> },
         { id: '3', label: 'Schedule', href: '/admin/schedule', icon: <CalendarDays strokeWidth={1} /> },
-        // { id: '4', label: 'Statictics', href: '/admin/statistics', icon: <Layers strokeWidth={1} /> },
+        { id: '4', label: 'Statictics', href: '/admin/statistics', icon: <Layers strokeWidth={1} /> },
         { id: '5', label: 'Support', href: '/admin/support', icon: <MessageCircleQuestion strokeWidth={1} /> },
     ];
 

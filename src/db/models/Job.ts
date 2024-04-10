@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const JobSchema = new mongoose.Schema({
+export const JobSchema = new mongoose.Schema({
   companyName: {
     type: String,
     required: [true, "Enter Company name"],
@@ -62,6 +62,8 @@ const JobSchema = new mongoose.Schema({
     required: [true, "Enter Job Description"],
   },
 });
+
+
 
 const newJob =
   mongoose.models.jobschemas || mongoose.model("jobschemas", JobSchema);

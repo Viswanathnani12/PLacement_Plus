@@ -51,7 +51,7 @@ const JobForm: React.FC = () => {
     });
 
     const addJobWithBranches = addJob.bind(null, selectedKeys)
-
+    
 
     // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     //     const { name, value } = e.target;
@@ -239,7 +239,7 @@ const JobForm: React.FC = () => {
                         >
                             Apply Link
                         </label>
-                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-[#C4C4C4] text-lg' variant={'bordered'} type="Link" label="  " placeholder='Enter Link' size='lg' name='applyLink' />
+                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-blue-400 text-lg' variant={'bordered'} type="Link" label="  " placeholder='Enter Link' size='lg' name='applyLink' />
                     </div>
 
                     {/* Drive Mode */}
@@ -250,7 +250,7 @@ const JobForm: React.FC = () => {
                         >
                             Drive Mode
                         </label>
-                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-[#C4C4C4] text-lg' variant={'bordered'} type="text" label="  " placeholder='Enter Link' size='lg' name='driveMode' />
+                        <Input className='bg-white shadow-md rounded-lg border-2 border-[#C4C4C4] text-black text-lg' variant={'bordered'} type="text" label="  " placeholder='Enter Drive Mode' size='lg' name='driveMode' />
                     </div>
 
 
