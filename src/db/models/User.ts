@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
         required:[true, "Enter PassedOutBatch"],
     },
     AppliedJobs: {
-        type: [JobSchema]
+        type: []
     },
     SavedJobs:{
         type:[JobSchema]
