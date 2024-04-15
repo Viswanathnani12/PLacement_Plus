@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { JobSchema } from "./Job";
 
 const UserSchema = new mongoose.Schema({
     RollNo:{
@@ -23,10 +22,10 @@ const UserSchema = new mongoose.Schema({
         required:[true, "Enter PassedOutBatch"],
     },
     AppliedJobs: {
-        type: []
+        type: [String],
     },
     SavedJobs:{
-        type:[JobSchema]
+        type:[String]
     }
 })
 
