@@ -4,46 +4,41 @@ import { useState } from 'react'
 import Image from "next/image"
 import localFont from "next/font/local"
 import { cn } from "@/lib/utils"
-import { UserButton } from '@clerk/nextjs'
+import { UserButton, useAuth } from '@clerk/nextjs'
 import Link from "next/link"
 import { AlignLeftIcon, File, FileDown, ReceiptTextIcon } from 'lucide-react'
 import { auth, currentUser } from "@clerk/nextjs"
 import { usePathname, useRouter } from 'next/navigation'
-
+import { AddUser } from '@/actions/addUser'
 
 const myfont = localFont({ src: "../../public/fonts/hf.ttf" })
 
 const CustomPage = () => {
+   const {userId } = useAuth() 
+   
   return (
     <div className="max-w-md mx-auto">
-      <form className="space-y-4">
+      <form className="space-y-4" action={AddUser.bind(null  , userId  || " ")}>
+         {userId}
         <div>
           <label htmlFor="college" className="block font-medium">College</label>
-          <input type="text" id="college" className="w-full border rounded-md px-4 py-2 mt-1" />
+          <input type="text" id="college" className="w-full border rounded-md px-4 py-2 mt-1" name='college' />
         </div>
         <div>
           <label htmlFor="branch" className="block font-medium">Branch</label>
-          <input type="text" id="branch" className="w-full border rounded-md px-4 py-2 mt-1" />
+          <input type="text" id="branch" className="w-full border rounded-md px-4 py-2 mt-1" name='branch'/>
         </div>
         <div>
-          <label htmlFor="cgpa" className="block font-medium">CGPA</label>
-          <input type="text" id="cgpa" className="w-full border rounded-md px-4 py-2 mt-1" />
+          <label htmlFor="Name" className="block font-medium">Name</label>
+          <input type="text" id="Name" className="w-full border rounded-md px-4 py-2 mt-1" name="name"/>
         </div>
         <div>
-          <label className="block font-medium">Skills</label>
-          <div className="flex space-x-2">
-            <div className="bg-gray-200 px-2 py-1 rounded-md">Skill 1</div>
-            <div className="bg-gray-200 px-2 py-1 rounded-md">Skill 2</div>
-            {/* Add more skills as needed */}
-          </div>
-          <div className="flex mt-1">
-            <input type="text" className="border rounded-md px-4 py-2 flex-grow" />
-            <button type="button" className="ml-2 px-4 py-2 bg-blue-600 text-white rounded-md">Add Skill</button>
-          </div>
+          <label htmlFor="rollno" className="block font-medium">RollNo</label>
+          <input type="text" id="Roll" className="w-full border rounded-md px-4 py-2 mt-1" name="rollno"/>
         </div>
         <div>
-          <label htmlFor="educationHistory" className="block font-medium">Education History</label>
-          <textarea id="educationHistory" className="w-full border rounded-md px-4 py-2 mt-1"></textarea>
+          <label htmlFor="passedoutbatch" className="block font-medium">Passed Out Batch</label>
+          <input type="text" id="Roll" className="w-full border rounded-md px-4 py-2 mt-1" name="passedoutbatch"/>
         </div>
         <div>
           <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md">Submit</button>
