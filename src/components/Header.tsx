@@ -194,9 +194,7 @@ const Header: React.FC = () => {
         <UserButton afterSignOutUrl='/'>
           <UserButton.UserProfilePage
             label="User Details"
-            url="/"
             labelIcon={<ReceiptTextIcon color='black' className='ml-[-6px] mt-[-4px] ' />}
-            
           >
             <CustomPage />
           </UserButton.UserProfilePage>
