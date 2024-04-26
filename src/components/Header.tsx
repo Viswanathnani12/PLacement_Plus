@@ -196,6 +196,7 @@ const Header: React.FC = () => {
             label="User Details"
             url="/"
             labelIcon={<ReceiptTextIcon color='black' className='ml-[-6px] mt-[-4px] ' />}
+            
           >
             <CustomPage />
           </UserButton.UserProfilePage>
