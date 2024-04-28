@@ -56,17 +56,6 @@ export default function Home() {
           <Image src={'/wel.gif'} alt="" width={0} height={0} className="h-[430px] w-[430px] "></Image>
         </div>
       </div>
-      <div className="relative flex ml-40  top-[-380px] w-full mt-[-100px] h-80">
-        <div className="w-[60%] h-full ml-[-20px]">
-          <p className={cn("text-6xl mb-4", myfont.className)}>Take your job profile to the <p className="text-[#103FEF]">Placementplus</p></p>
-          <p className="text-lg font-light text-[#505B66]">Boost your job profile with Kudos from your peers for your skills<br />
-            and traits. Land your dream job effortlessly. Our platform helps <br /> you keep track of all your jobs.
-          </p>
-        </div>
-        <div className="relative w-[50%] h-full top-[-70px] ml-[-150px] mt-[20px]">
-          <Image src={'/wel.gif'} alt="" width={0} height={0} className="h-[430px] w-[430px] "></Image>
-        </div>
-      </div>
       <div className="relative flex flex-col text-center ml-10  h-40 w-full top-[-300px] overflow-hidden">
         <p className="text-md font-bold font-inter text-[#505B66]">COMPANIES HIRING ON PLACEMENTPLUS</p>
         <style jsx>{`
