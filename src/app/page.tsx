@@ -98,7 +98,7 @@ export default function Home() {
         <div className=" w-[50%] h-full flex flex-col justify-end p-6">
           <p className="text-sm text-[#3D89F8] font-bold ">STATS THAT MATTERS</p><br />
           <p className=" text-4xl font-bold font-Inter mt-1">Track your progress<br /> with all your history</p>
-          <p className="text-md text-[#505B66] mt-4">Review and HI analyze your past interviews and<br /> exams to ensure you learn from previous<br /> experiences and avoid repeating mistakes in<br /> the future.</p>
+          <p className="text-md text-[#505B66] mt-4">Review and analyze your past interviews and<br /> exams to ensure you learn from previous<br /> experiences and avoid repeating mistakes in<br /> the future.</p>
         </div>
       </div>
       <div className="h-[40%] mb-[-150px] w-[100%] flex items-center justify-center">
