@@ -14,14 +14,15 @@ import { AddUser } from '@/actions/addUser'
 const myfont = localFont({ src: "../../public/fonts/hf.ttf" })
 
 const CustomPage = () => {
-   const {userId } = useAuth() 
-   
+  const {userId } = useAuth() 
+  console.log(userId)
   return (
     <div className="max-w-md mx-auto">
       <form className="space-y-4" action={AddUser.bind(null  , userId  || " ")}>
-         {userId}
+        {userId}
         <div>
           <label htmlFor="college" className="block font-medium">College</label>
+          <input type="text" id="college" className="w-full border rounded-md px-4 py-2 mt-1" name='college' />
           <input type="text" id="college" className="w-full border rounded-md px-4 py-2 mt-1" name='college' />
         </div>
         <div>
@@ -187,10 +188,11 @@ const Header: React.FC = () => {
           </div>
           
         }
+        
       </div>
 
       <div className="flex mt-4 p-1 ml-[45%] border border-[#8089FE] h-10 items-center rounded-3xl bg-[#c7cce988]">
-        {/* <UserButton afterSignOutUrl="/" /> */}
+        
         <UserButton afterSignOutUrl='/'>
           <UserButton.UserProfilePage
             label="User Details"
@@ -198,9 +200,10 @@ const Header: React.FC = () => {
           >
             <CustomPage />
           </UserButton.UserProfilePage>
-          <UserButton.UserProfilePage label="account" />
+          <UserButton.UserProfilePage label="account"/>
           <UserButton.UserProfilePage label="security" />
         </UserButton>
+        {/* <UserButton afterSignOutUrl='/'/> */}
       </div>
     </div>
   )

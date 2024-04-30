@@ -28,14 +28,6 @@ const page = () => {
         redirect("/admin");
     }
     return (
-        // <div>
-        //     Student DashBoard
-        //     <UserButton afterSignOutUrl='/' appearance={{
-        //         elements: {
-        //         },
-        //     }}
-        //     />
-        // </div>
         <>
             {/* <Header /> */}
             <div className="flex h-[50%] mt-8">
@@ -51,19 +43,19 @@ const page = () => {
                         <Button variant="outline" className="border border-[#3F4DFC] text-[#3F4DFC]" size={'lg'}>Apply Now ↗</Button>
                     </div>
                 </div>
-                <div className="w-[50%] flex items-end">
-                    <Image src='/sdashgif.gif' height={0} width={0} alt='' className="h-[120%] w-[75%]" />
+                <div className="w-[50%] flex mt-[-5%]">
+                    <Image src='/sdashgif.gif' height={0} width={0} alt='' className="h-[100%] w-[75%]" />
                 </div>
             </div>
-            <div className="w-screen h-[20%] mt-[-80px]">
+            <div className="w-full h-[20%] mt-[-80px]">
                 <div className="ml-20">
                     <p className="flex text-2xl font-bold">Get <p className="text-[#8089FE] ml-2 mr-2">plus</p> features every step of the way</p>
                 </div>
-                <div className=" h-[88%] flex">
-                    <Image src='/sd1.png' height={110} width={300} alt="" className="ml-20 mt-4" />
-                    <Image src='/sd2.png' height={110} width={300} alt="" className="ml-20 mt-4" />
-                    <Image src='/sd3.png' height={110} width={300} alt="" className="ml-20 mt-4" />
-                    <Image src='/sd4.png' height={110} width={300} alt="" className="ml-20 mt-4" />
+                <div className=" h-[100%] flex">
+                    <Image src='/svg1.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
+                    <Image src='/svg2.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
+                    <Image src='/svg3.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
+                    <Image src='/svg4.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
                 </div>
             </div>
         </>

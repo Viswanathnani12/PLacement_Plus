@@ -25,9 +25,11 @@ const FileInput = () => {
     }
 
     return (
-        <>
-            <Input type='file' onChange={(e) => { setFile(e.target.files) }} className='border border-black' />
-            <Button onClick={upload} className='w-full mt-4 bg-blue-600'>Add Result</Button>
+        <> 
+            <form >
+                <Input type='file' onChange={(e) => { setFile(e.target.files) }} className='border border-black' />
+                <Button onClick={upload} className='w-full mt-4 bg-blue-600'>Add Result</Button>
+            </form>
         </>
     )
 }

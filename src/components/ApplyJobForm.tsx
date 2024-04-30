@@ -13,7 +13,7 @@ export function ApplyForm(job: any) {
     const { userId } = useAuth()
     return <div>
         <form className="flex flex-row gap-2" >
-            <Button className='w-[100%] bg-[#0A65CC] rounded-lg text-white underline-[#ffff2]' onClick={()=>
+            <Button className='w-[160px] bg-[#0A65CC] rounded-lg text-white underline-[#ffff2]' onClick={()=>
             {
                 ApplyJob(job,userId!);
             }}>

@@ -68,11 +68,11 @@ export default function Home() {
               }
             }
 
-            .animate-marquee {
+            .marquee {
               animation: marquee 23s linear infinite;
             }
           `}</style>
-        <div className="flex animate-marquee  gap-8 items-center mt-2  h-24">
+        <div className="flex marquee  gap-8 items-center mt-2  h-24">
           <Image src={'/logo1.png'} alt="" height={200} width={180}></Image>
           <Image src={'/logo2.png'} alt="" height={200} width={180}></Image>
           <Image src={'/logo3.png'} alt="" height={200} width={180}></Image>
