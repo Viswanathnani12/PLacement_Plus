@@ -27,7 +27,8 @@ const page = async () => {
         }
         //   console.log(id)  
           const job  = await newJob.findOne({_id : id})
-          return <Card className='w-[80%] mb-4 hover:border-[#0A65CC] shadow-md' key={job.companyName}>
+          return <div className='grid grid-flow-row grid-cols-3 ml-20 p-10 h-[100%] mb-[20%]'> 
+          <Card className='w-screen mb-4 hover:border-[#0A65CC] shadow-md' key={job.companyName}>
           <CardContent className='space-y-1'>
               <div className='flex justify-between mt-4' >
                   <p className='font-Inter font-medium font-md'>{job.companyName}</p>
@@ -50,6 +51,7 @@ const page = async () => {
               </div>
           </CardContent>
          </Card>
+         </div>
     }
     return (
         <>
@@ -57,7 +59,7 @@ const page = async () => {
             <div className='grid grid-cols-3 ml-20 p-10 h-[100%] mb-[20%]'>
                 {
                     appliedJobs.map((jid : string)=>{
-                          return getJobById(jid)
+                          return  getJobById(jid)
                     })
                 }
             </div>

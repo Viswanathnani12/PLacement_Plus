@@ -213,7 +213,7 @@ const Header: React.FC = () => {
         }
       </div>
 
-      <div className="flex mt-4 p-1 ml-[40%] border border-[#8089FE] h-10 items-center rounded-3xl bg-[#c7cce988]">
+      <div className="flex mt-4 p-1 ml-[36%] border border-[#8089FE] h-10 items-center rounded-3xl bg-[#c7cce988]">
         
         <UserButton afterSignOutUrl='/'/>
       </div>

@@ -64,13 +64,13 @@ export const SideNavbar = ({ }: Props) => {
                 variant: "ghost",
                 href: "/admin/statistics"
               },
-              {
-                title: "Support",
-                label: "",
-                icon: HelpCircleIcon,
-                variant: "ghost",
-                href: "/admin/support"
-              },
+              // {
+              //   title: "Support",
+              //   label: "",
+              //   icon: HelpCircleIcon,
+              //   variant: "ghost",
+              //   href: "/admin/support"
+              // },
             ]}
           />
         </div>

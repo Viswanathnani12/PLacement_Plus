@@ -47,7 +47,7 @@ const page = () => {
                     <Image src='/sdashgif.gif' height={0} width={0} alt='' className="h-[100%] w-[75%]" />
                 </div>
             </div>
-            <div className="w-full h-[20%] mt-[-80px]">
+            {/* <div className="w-full h-[20%] mt-[-80px]">
                 <div className="ml-20">
                     <p className="flex text-2xl font-bold">Get <p className="text-[#8089FE] ml-2 mr-2">plus</p> features every step of the way</p>
                 </div>
@@ -57,7 +57,7 @@ const page = () => {
                     <Image src='/svg3.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
                     <Image src='/svg4.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

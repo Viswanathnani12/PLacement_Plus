@@ -1,16 +1,12 @@
 import React from 'react'
 import newJob from "@/db/models/Job"
 import newUser from '@/db/models/User';
-
 import { auth } from '@clerk/nextjs';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
 import { BellIcon, BellRingIcon, Bookmark, BookmarkIcon, SaveIcon } from 'lucide-react';
-import Link from 'next/link';
 import { ApplyForm } from '@/components/ApplyJobForm';
-import { ApplyJob } from '@/actions/applyJob';
 import { SavedForm } from '@/components/SavedForm';
-import { redirect } from 'next/navigation';
 
 const page = async () => {
     const {userId} = auth()
@@ -36,7 +32,6 @@ const page = async () => {
         <>
             <div className='grid grid-cols-3 ml-24 mt-10 h-[100%] mb-[20%]'>
                 {finalJobs.map((job: any) => (
-                    
                         // eslint-disable-next-line react/jsx-key
                     <Card className='w-[80%] mb-4 hover:border-[#0A65CC] shadow-md' key={job.companyName}>
                         <CardContent className='space-y-1'>
@@ -59,7 +54,6 @@ const page = async () => {
                                     <Button className='w-[120%] broder border-[#0A65CC] text-[#0A65CC]' variant='outline'>Remind Me <BellIcon size={15} className='mt-1 ml-2' /></Button>
                                 </a>
                             </div>
-                            
                         </CardContent>
                     </Card>   
                 ))}

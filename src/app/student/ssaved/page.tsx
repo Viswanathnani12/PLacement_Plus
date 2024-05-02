@@ -56,7 +56,7 @@ const page = async () => {
             <div className='grid grid-cols-3 ml-16 p-10 h-[100%] mb-[20%]'>
                 {
                     savedJobs.map((jid : string)=>{
-                          return getJobById(jid)
+                        return getJobById(jid)
                     })
                 }
             </div>

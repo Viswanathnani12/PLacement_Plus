@@ -79,7 +79,6 @@ const JobForm: React.FC = () => {
                             Enter Company Name
                         </label>
                         <Input
-
                             className='bg-white shadow-md rounded-lg text-black border-2 border-[#C4C4C4] text-lg' variant={'bordered'} type="text" placeholder="Company name" label=' ' size='lg' name='companyName'
                         />
                     </div>

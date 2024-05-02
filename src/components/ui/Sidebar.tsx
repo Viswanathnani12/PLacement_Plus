@@ -22,7 +22,7 @@ const Sidebar = () => {
         { id: '2', label: 'Add Job', href: '/admin/addjob', icon: <ClipboardList strokeWidth={1} /> },
         { id: '3', label: 'Schedule', href: '/admin/schedule', icon: <CalendarDays strokeWidth={1} /> },
         { id: '4', label: 'Statictics', href: '/admin/statistics', icon: <Layers strokeWidth={1} /> },
-        { id: '5', label: 'Support', href: '/admin/support', icon: <MessageCircleQuestion strokeWidth={1} /> },
+        // { id: '5', label: 'Support', href: '/admin/support', icon: <MessageCircleQuestion strokeWidth={1} /> },
     ];
 
     const [selectedOption, setSelectedOption] = useState<Option | null>(null);

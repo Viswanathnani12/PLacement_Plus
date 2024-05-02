@@ -14,7 +14,7 @@ export async function SaveJob(  job : any  , userId : string){
       const obj = await newUser.findOne({userId : userId});
       let SavedJobs = obj.SavedJobs
       // console.log(job)
-      console.log(job.job._id)
+      // console.log(job.job._id)
 
       SavedJobs.push(job.job._id);
       // console.log(AppliedJobs)
