@@ -25,8 +25,8 @@ const Page = async () => {
     const currentDate = new Date();
     const currentWeekStart = currentDate.getDate() - currentDate.getDay();
     const currentWeekEnd = currentWeekStart + 6;
-    // console.log(currentWeekStart);
-    // console.log(currentWeekEnd);
+    console.log(currentWeekStart);
+    console.log(currentWeekEnd);
 
     return jobs.filter(job => {
       const driveDate = new Date(job.driveDate).getDate();

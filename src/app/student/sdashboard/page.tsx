@@ -58,6 +58,9 @@ const page = () => {
                     <Image src='/svg4.svg' height={100} width={250} alt="" className="ml-20 mt-4" />
                 </div>
             </div> */}
+            <div>
+                <Image src='/sdd1.svg' height={100} width={500} alt="" className="ml-20 mt-4" />
+            </div>
         </>
     )
 }
