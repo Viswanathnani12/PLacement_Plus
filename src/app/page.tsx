@@ -52,8 +52,8 @@ export default function Home() {
             and traits. Land your dream job effortlessly. Our platform helps <br /> you keep track of all your jobs.
           </p>
         </div>
-        <div className="relative w-[50%] h-full top-[-70px] ml-[-150px] mt-[20px]">
-          <Image src={'/wel.gif'} alt="" width={0} height={0} className="h-[430px] w-[430px] "></Image>
+        <div className="relative w-[50%] h-full top-[-70px] ml-[-100px] mt-[25px]">
+          <Image src={'/wel.gif'} alt="" width={0} height={0} className="h-[120%] w-[50%] "></Image>
         </div>
       </div>
       <div className="relative flex flex-col text-center ml-10  h-40 w-full top-[-300px] overflow-hidden">
@@ -81,7 +81,7 @@ export default function Home() {
           <Image src={'/logo6.png'} alt="" height={200} width={180}></Image>
         </div>
       </div>
-      <div className="h-[40%]  mt-[-200px] w-[100%] flex items-center justify-center">
+      <div className="h-[40%]  mt-[-250px] w-[100%] flex items-center justify-center">
         <div className=" w-[50%] h-full mr-10 flex flex-col justify-end p-6">
           <p className="text-sm text-[#3D89F8] font-bold ml-[50%]">TIMELY ALERTS</p><br />
           <p className="ml-[50%] text-4xl font-bold font-Inter mt-1">Never miss an<br /> Interveiw again</p>
@@ -91,7 +91,7 @@ export default function Home() {
           <Image src='/g3.gif' height={0} width={0} alt="" className="h-[100%] w-[50%]" />
         </div>
       </div>
-      <div className="h-[40%] mt-[10%] mb-[5%] flex items-center justify-center">
+      <div className="h-[40%] mt-[5%] mb-[4%] flex items-center justify-center">
         <div className="w-[50%] h-full ml-[20%] mr-[-20%]">
           <Image src='/g2.gif' height={0} width={0} alt="" className="h-[100%] w-[50%]" />
         </div>
@@ -101,7 +101,7 @@ export default function Home() {
           <p className="text-md text-[#505B66] mt-4">Review and analyze your past interviews and<br /> exams to ensure you learn from previous<br /> experiences and avoid repeating mistakes in<br /> the future.</p>
         </div>
       </div>
-      <div className="h-[40%] mb-[-150px] w-[100%] flex items-center justify-center">
+      <div className="h-[40%] mb-[-120px] w-[100%] flex items-center justify-center">
         <div className=" w-[50%] h-full mr-10 flex flex-col justify-end p-6">
           <p className="text-sm text-[#3D89F8] font-bold ml-[50%]">STAY ORGANISED</p><br />
           <p className="ml-[50%] text-4xl font-bold font-Inter mt-1">Plan ahead your<br /> Schedule</p>

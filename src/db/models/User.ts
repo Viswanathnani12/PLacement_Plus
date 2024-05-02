@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema({
+    userId : {
+         type : String,
+         required : true
+    },
     RollNo:{
         type:String,
         required:[true, "Enter RollNo"],
@@ -33,4 +37,3 @@ const newUser =
   mongoose.models.users || mongoose.model("users", UserSchema);
 
 export default newUser;
-

@@ -33,10 +33,10 @@ const Page = () => {
             <CheckCircle2Icon strokeWidth={1.5} size={20} />
             <p className="font-medium text-xs ml-2 mt-[2px]" >Monitor all your job applications effortlessly.</p>
           </div>
-          <Image src='/logingif.gif' alt="gif" height={0} width={0} className="h-[289px] w-[320px] ml-80 mt-14" />
+          <Image src='/hg2.gif' alt="gif" height={0} width={0} className="h-[70%] w-[50%] ml-48" />
         </div>
         <div className="flex items-center h-full w-[40%]">
-          <SignUp path="/studentsignup" signInUrl="/studentlogin" />
+          <SignUp path="/studentsignup" />
         </div>
       </div>
       <div className="flex justify-between items-center h-[10%] w-screen bg-[#103FEF] p-4 mt-[5%]">

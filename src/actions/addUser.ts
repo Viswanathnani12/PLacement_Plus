@@ -5,7 +5,11 @@ import { connect } from "@/dbConfig/dbConfig";
 
 connect();
 export async function AddUser(  userId : string, formData1 : FormData){
-       console.log(formData1);
+    
+           
+      console.log(userId)
+     
+      console.log(formData1);
         try{
               const newUser = new UserModel({
                  userId : userId,
@@ -17,8 +21,10 @@ export async function AddUser(  userId : string, formData1 : FormData){
                  AppliedJobs : [""],
                  SavedJobs : [""]
               });
+               
+              console.log(newUser) 
               await newUser.save();
-              console.log(newUser)
+              
         }catch(e){
           console.log("Error Occured " + e);
         }
