@@ -1,5 +1,5 @@
 'use client'
-import { SignUp } from "@clerk/nextjs"
+// import { SignUp } from "@clerk/nextjs"
 
 import Image from "next/image";
 import localFont from "next/font/local";
@@ -37,7 +37,7 @@ const Page = () => {
           <Image src='/hg2.gif' alt="gif" height={0} width={0} className="h-[70%] w-[50%] ml-48" />
         </div>
         <div className="flex items-center h-full w-[40%]">
-          <SignUp path="/studentsignup" />
+          {/* <SignUp path="/studentsignup" /> */}
         </div>
       </div>
       <div className="flex justify-between items-center h-[10%] w-screen bg-[#103FEF] p-4 mt-[5%]">
