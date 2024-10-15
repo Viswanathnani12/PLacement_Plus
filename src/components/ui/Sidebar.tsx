@@ -15,7 +15,7 @@ interface Option {
 }
 
 const Sidebar = () => {
-    
+
 
     const options: Option[] = [
         { id: '1', label: 'Dashboard', href: '/admin/dashboard', icon: <HomeIcon strokeWidth={1} /> },

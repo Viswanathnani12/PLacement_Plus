@@ -1,3 +1,4 @@
+"use client"
 import { SignedOut, UserButton, auth } from "@clerk/nextjs";
 import { LayoutDashboard } from 'lucide-react'
 import React from 'react'

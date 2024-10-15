@@ -1,3 +1,4 @@
+"use client"
 import type { Metadata } from "next";
 import { ClerkProvider, SignedOut } from '@clerk/nextjs'
 import { Inter, Limelight } from "next/font/google";
@@ -20,13 +21,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-       <div className="w-screen">
-               <Header />
-                <div className="ml-0">{children}</div>
-                <Footer />
-       </div>
-                
-                   
+        <div className="w-screen">
+            <Header />
+            <div className="ml-0">{children}</div>
+            <Footer />
+        </div>
+
+
 
     );
 }

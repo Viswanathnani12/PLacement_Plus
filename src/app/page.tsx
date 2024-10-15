@@ -122,8 +122,8 @@ export default function Home() {
           <Image src='/g1.gif' height={0} width={0} alt="" className="h-[100%] w-[40%]" />
         </div>
       </div>
-      <div className="mt-[20%] h-[50%] bg-[#18191C]">
-        <Image src='/Footer.svg' height={400} width={400} alt="" className="h-[100%] w-screen mt-[200px]" />
+      <div className="mt-[20%] h-[20%] bg-[#18191C]">
+        <Image src='/homefoot.svg' height={400} width={400} alt="" className="h-[100%] w-screen mt-[200px]" />
       </div>
     </div>)}
     </div>

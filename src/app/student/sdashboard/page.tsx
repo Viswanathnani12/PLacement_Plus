@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
@@ -59,7 +60,7 @@ const page = () => {
                 </div>
             </div> */}
             <div>
-                <Image src='/sdd1.svg' height={100} width={500} alt="" className="ml-20 mt-4" />
+                <Image src='/sdd1.svg' height={100} width={500} alt="" className="ml-20 w-[80%]" />
             </div>
         </>
     )

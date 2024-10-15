@@ -2,6 +2,8 @@
 
 import newJob from "@/db/models/Job";
 import { connect } from "@/dbConfig/dbConfig";
+import { revalidatePath } from "next/cache";
+
 
 connect();
 
@@ -43,6 +45,7 @@ export async function addJob(Branches: Set<string>, formData: FormData) {
   
     await njob.save();  
     return {success:true};
+    revalidatePath('/admin/addjob')
   } catch (error) {
     return {error:true}
   }

@@ -1,3 +1,4 @@
+"use client"
 import { SignIn } from "@clerk/nextjs";
 import Image from "next/image";
 import localFont from "next/font/local";
@@ -38,7 +39,7 @@ const Page = () => {
             <CheckCircle2Icon strokeWidth={1.5} size={20} />
             <p className="font-medium text-xs ml-2 mt-[2px]" >Monitor all your job applications effortlessly.</p>
           </div>
-          <Image src='/logingif.gif' alt="gif" height={0} width={0} className="h-[289px] w-[320px] ml-80 mt-14" />
+          <Image src='/logingif.gif' alt="gif" height={0} width={0} className="h-[289px] w-[320px] ml-80 mt-18" />
         </div>
         <div className="flex items-center h-full w-[40%]">
           <SignIn path="/studentlogin" afterSignInUrl="/student/sdashboard" signUpUrl="/studentsignup" afterSignUpUrl="/studentlogin" />

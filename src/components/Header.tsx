@@ -70,7 +70,7 @@ const Header: React.FC = () => {
       </Link>
 
       <div className="flex mt-3 p-3 m-2">
-      <style jsx>{`
+        <style jsx>{`
         @keyframes linkHoverAnimation {
           0% {
             color: #2C62EE;
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
 
               <Link
                 href='/student/sjobs'
-                
+
               >
                 Jobs
               </Link>
@@ -111,13 +111,13 @@ const Header: React.FC = () => {
           :
           <div className='ml-10 mr-14 hover-futuristic'>
             <Link
-            href='/student/sjobs'
-            
-          >
-            Jobs
-          </Link>
+              href='/student/sjobs'
+
+            >
+              Jobs
+            </Link>
           </div>
-          
+
         }
 
 
@@ -136,12 +136,12 @@ const Header: React.FC = () => {
           :
           <div className='mr-14 hover-futuristic'>
             <Link
-            href='/student/sapplied'
-          >
-            Applied
-          </Link>
+              href='/student/sapplied'
+            >
+              Applied
+            </Link>
           </div>
-          
+
         }
 
         {usePathname() === '/student/ssaved' ?
@@ -158,13 +158,13 @@ const Header: React.FC = () => {
           :
           <div className={`mr-14 hover-futuristic`}>
             <Link
-            href='/student/ssaved'
-            
-          >
-            Saved
-          </Link>
+              href='/student/ssaved'
+
+            >
+              Saved
+            </Link>
           </div>
-          
+
         }
 
         {usePathname() === '/student/sschedule' ?
@@ -181,14 +181,14 @@ const Header: React.FC = () => {
           :
           <div className={`mr-14 hover-futuristic`}>
             <Link
-            href='/student/sschedule'
-          >
-            Schedule
-          </Link>
+              href='/student/sschedule'
+            >
+              Schedule
+            </Link>
           </div>
-          
+
         }
-        
+
         {usePathname() === '/student/sdetails' ?
           <>
             <div className='flex'>
@@ -204,18 +204,18 @@ const Header: React.FC = () => {
           :
           <div className='mr-14 hover-futuristic'>
             <Link
-            href='/student/sdetails'
-          >
-            Details
-          </Link>
+              href='/student/sdetails'
+            >
+              Details
+            </Link>
           </div>
-          
+
         }
       </div>
 
       <div className="flex mt-4 p-1 ml-[36%] border border-[#8089FE] h-10 items-center rounded-3xl bg-[#c7cce988]">
-        
-        <UserButton afterSignOutUrl='/'/>
+
+        <UserButton afterSignOutUrl='/' />
       </div>
     </div>
   )

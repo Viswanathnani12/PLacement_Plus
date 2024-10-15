@@ -1,5 +1,5 @@
 
-import { SignedOut, UserButton, auth } from "@clerk/nextjs";
+// import { SignedOut, UserButton, auth } from "@clerk/nextjs";
 import newJob from "@/db/models/Job"
 // import { cookies } from "next/cookies";
 
@@ -15,8 +15,8 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-  } from "@/components/ui/dialog"
-  
+} from "@/components/ui/dialog"
+
 import {
     Carousel,
     CarouselContent,
@@ -29,7 +29,7 @@ import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-  } from "@/components/ui/popover"
+} from "@/components/ui/popover"
 import { DrawerContent } from "@/components/ui/drawer";
 
 
@@ -45,13 +45,13 @@ export default async function Page() {
         const currentWeekEnd = currentWeekStart + 6;
         // console.log(currentWeekStart);
         // console.log(currentWeekEnd);
-    
+
         return jobs.filter(job => {
-          const driveDate = new Date(job.driveDate).getDate();
-          // console.log(driveDate);
-          return driveDate >= currentWeekStart && driveDate <= currentWeekEnd;
+            const driveDate = new Date(job.driveDate).getDate();
+            // console.log(driveDate);
+            return driveDate >= currentWeekStart && driveDate <= currentWeekEnd;
         });
-      };
+    };
 
 
     const jobs = await newJob.find({})
@@ -108,22 +108,22 @@ export default async function Page() {
                                     </DialogTrigger>
                                     <DialogContent>
                                         <DialogDescription>
-                                        <div className="p-4 text-black flex flex-col space-y-2">
-                                            <p>Company Name: {job.companyName}</p>
-                                            <p>Job Role: {job.jobRole}</p>
-                                            <p>Branches: {job.branches.join(", ")}</p>
-                                            <p className="flex font-normmal">Date:
-                                            <p className="ml-2">{new Date(job.driveDate).toLocaleDateString("en-GB", {
-                                                day: "2-digit",
-                                                month: "2-digit",
-                                                year: "numeric",
-                                                })}</p> 
-                                            </p>
-                                            <p>Job Role: {job.jobLocation}</p>
-                                            <p>CTC: {job.ctc}</p>
-                                            <p>Batch: {job.batch}</p>
-                                            <p>Job Description:<br/> {job.jobDescription}</p>
-                                        </div>
+                                            <div className="p-4 text-black flex flex-col space-y-2">
+                                                <p>Company Name: {job.companyName}</p>
+                                                <p>Job Role: {job.jobRole}</p>
+                                                <p>Branches: {job.branches.join(", ")}</p>
+                                                <p className="flex font-normmal">Date:
+                                                    <p className="ml-2">{new Date(job.driveDate).toLocaleDateString("en-GB", {
+                                                        day: "2-digit",
+                                                        month: "2-digit",
+                                                        year: "numeric",
+                                                    })}</p>
+                                                </p>
+                                                <p>Job Role: {job.jobLocation}</p>
+                                                <p>CTC: {job.ctc}</p>
+                                                <p>Batch: {job.batch}</p>
+                                                <p>Job Description:<br /> {job.jobDescription}</p>
+                                            </div>
                                         </DialogDescription>
                                     </DialogContent>
                                 </Dialog>
@@ -131,10 +131,10 @@ export default async function Page() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
-            
+
             <h1 className="mt-14 font-bold">Waiting for Results</h1>
             <Carousel
                 opts={{
@@ -155,9 +155,9 @@ export default async function Page() {
                                             day: "2-digit",
                                             month: "2-digit",
                                             year: "numeric",
-                                        })}</p> 
+                                        })}</p>
                                     </p>
-                                    <FileInput/>
+                                    <FileInput />
                                 </Card>
                             </CarouselItem>
                         ))}

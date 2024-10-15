@@ -263,7 +263,7 @@ const JobForm: React.FC = () => {
                             Job Description
                         </label>
                         <Textarea
-                            height={100}
+                            height={200}
                             key={''}
                             variant={'bordered'}
                             label=" "
