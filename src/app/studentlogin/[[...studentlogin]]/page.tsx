@@ -1,4 +1,4 @@
-"use client"
+
 import { SignIn } from "@clerk/nextjs";
 import Image from "next/image";
 import localFont from "next/font/local";
