@@ -1,6 +1,13 @@
 'use client'
 import { SignIn } from "@clerk/nextjs";
 
+export async function generateStaticParams() {
+    const posts = await fetch('https://.../posts').then((res) => res.json())
+
+    return posts.map((post: any) => ({
+        slug: post.slug,
+    }))
+}
 export default function Page() {
     return (
         <div className="flex justify-center items-center flex-col">

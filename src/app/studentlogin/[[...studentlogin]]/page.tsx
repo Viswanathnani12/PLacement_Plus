@@ -8,7 +8,13 @@ import { CheckCircle2Icon, CheckCircleIcon } from "lucide-react";
 
 const myfont = localFont({ src: "../../../../public/fonts/hf.ttf" })
 
+export async function generateStaticParams() {
+  const posts = await fetch('https://.../posts').then((res) => res.json())
 
+  return posts.map((post: any) => ({
+    slug: post.slug,
+  }))
+}
 
 const Page = () => {
   return (
