@@ -1,7 +1,7 @@
-import { SignUp } from '@clerk/clerk-react';
+// import { SignUp } from '@clerk/clerk-react';
 
 const StudentSignUp = () => {
-  return <SignUp path="/sign-up" routing="path"/>;
+  return <div></div>;
 };
 
 export default StudentSignUp
