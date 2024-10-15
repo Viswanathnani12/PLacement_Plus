@@ -1,4 +1,4 @@
-
+"use client"
 import { SideNavbar } from "@/components/SideNavbar";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/ui/Header";
