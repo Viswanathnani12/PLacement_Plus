@@ -1,4 +1,4 @@
-"use client"
+
 import type { Metadata } from "next";
 import { ClerkProvider, SignedOut } from '@clerk/nextjs'
 import { Inter, Limelight } from "next/font/google";
